@@ -1,8 +1,16 @@
+@import "../variables.scss";
 .header {
+    font-size: 16px;
     background: white;
     display: flex;
     padding: 10px 15px;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 50;
 }
 
 .header__search {
@@ -13,7 +21,7 @@
 .header__input {
     font-size: 15px;
     margin-left: 1rem;
-    width: 268px;
+    width: 13rem;
     height: 40px;
     border-radius: 100px;
     border: none;
@@ -23,15 +31,15 @@
 }
 
 .header__main-btn {
-    color: red;
+    position: relative;
+    cursor: pointer;
     &:hover path{
-        fill: red;
+        fill: $FACEBOOK_RED;
     } 
 }
 
 .header__main-btns {
-    margin-left: 7rem;
-    min-width: 550px;
+    min-width: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -39,7 +47,7 @@
 .header__user-photo {
     width: 29px;
     height: 29px;
-    background: #0572EF;
+    background: $FACEBOOK_BLUE;
     border-radius: 100%;
 }
 .header__user-name {
@@ -51,8 +59,24 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 7rem;
 }
+
+.header__indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -12px;
+    right: -12px;
+    color:white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $FACEBOOK_RED;
+}
+
+
 .user__right-btns{
     margin-left: 1rem;
 }
@@ -65,8 +89,77 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    & .header__indicator {
+       top: -7px;
+       right: -7px; 
+    }
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: .5);
+    }
 }
 
-body {
-    background: chartreuse;
+@media (max-width: 1201px) {
+    .header__main-btns {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header__main-btns {
+        min-width: 350px;
+    }
+
+    .header__main-btn {
+        height: 20px;
+        & svg {
+            height: 20px;
+        }
+    }
+
+    .user__right-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__user-photo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header__indicator {
+        width: 17px;
+        height: 17px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 876px) {
+    .header {
+        bottom: 0;
+        font-size: 13px;
+        padding: 5px;
+        height: 20px;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__main-btns {
+        min-width: 0;
+        width: 100%;
+    }
+    
+    .header__notifications {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__indicator {
+        top: -5px;
+        right: -8px;
+    }
 }

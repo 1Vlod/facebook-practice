@@ -1,3 +1,13 @@
 @import "./normalize.css";
 @import "./variables.scss";
-@import "./blocks/header"
+
+*{
+  font-family: "Roboto";
+}
+
+@import "./blocks/header";
+@import "./blocks/user";
+@import "./blocks/util";
+@import "./blocks/wall";
+@import "./blocks/map";
+@import "./blocks/_component-with-icon";

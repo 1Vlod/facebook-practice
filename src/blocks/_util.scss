@@ -1,0 +1,42 @@
+@import "../variables.scss";
+.util {
+  background: #E5E6EB;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.util-message,
+.util-liked {
+  width: 110px;
+  height: 36px;
+  &:hover {
+    color: $FACEBOOK_BLUE;
+  }
+  &:active {
+    background: $FACEBOOK_LIGHT_BLUE;
+  }
+}
+
+.util-search {
+  width: 48px;
+  height: 36px;
+  &:hover {
+    color: $FACEBOOK_BLUE;
+  }
+  &:active {
+    background: $FACEBOOK_LIGHT_BLUE;
+  }
+}
+
+.util-more {
+  width: 44px;
+  height: 36px;
+
+  &:hover {
+    color: $FACEBOOK_BLUE;
+  }
+  &:active {
+    background: $FACEBOOK_LIGHT_BLUE;
+  }
+}

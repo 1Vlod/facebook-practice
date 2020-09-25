@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+
+.component-with-icon {
+  display: flex;
+}
+
+.component-with-icon__wrapper {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+}
+
+.component-with-icon__icon {
+  color: $FACEBOOK_GREY_MEDIUM;
+  font-size: 20px;
+}
+
+.component-with-icon__content {
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $FACEBOOK_BLACK;
+}

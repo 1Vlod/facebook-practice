@@ -41,6 +41,10 @@
   font-size: 25px;
   line-height: 20px;
   margin-right: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .wall-post-pinned__text {
@@ -127,4 +131,39 @@
   color: $FACEBOOK_GREY;
   margin-top: 9px;
   display: block;
+}
+
+.cm-sh-separator {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .wall-post-pinned__smiley:first-of-type {
+    margin-left: 0;
+  }
+
+  .ml9 {
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .cm-sh-separator {
+    display: block;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .wall-post-pinned__post-info {
+    font-size: 13px;
+  }
+
+  .cm-sh {
+    width: 100px;
+  }
+
+  .wall-post-pinned__btn {
+    width: 31%;
+    vertical-align: top;
+  }
 }

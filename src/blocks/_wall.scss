@@ -123,3 +123,63 @@
 .wall-post__cards {
   margin-top: 11px;
 }
+
+@media (max-width: 1201px) {
+  .wall-post {
+    max-width: 370px;
+  }
+
+  .wall-block {
+    max-width: 320px;
+  }
+
+  .wall-post-create__head {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1170px) {
+  .wall-post {
+    max-width: 300px;
+  }
+
+  .wall-block {
+    max-width: 270px;
+  }
+
+  .wall-post-create__add {
+    display: flex;
+    align-items: center;
+  }
+
+  .wall-post-create__adds {
+    margin-left: 0;
+  }
+
+  .wall-post-create__add-btn {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .wall__container {
+    flex-direction: column;
+  }
+
+  .wall-block {
+    max-width: 100%;
+  }
+
+  .wall-post {
+    max-width: 100%;
+  }
+
+  .wall-post-create {
+    margin-top: 15px;
+  }
+
+  .wall {
+    padding-bottom: 50px;
+  }
+}

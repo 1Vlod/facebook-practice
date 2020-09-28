@@ -140,3 +140,89 @@
 .mr6 {
   margin-right: 6px;
 }
+
+
+@media (max-width: 1201px) {
+  .user__theme-img {
+    max-width: 70%;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .user__tab {
+    font-size: 13px;
+    padding: 0 8px 9px;
+  }
+
+  .user__triangle {
+    right: -5px;
+  }
+}
+
+@media (max-width: 876px) {
+  .user {
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .user__tab {
+    padding: 0 4px 4px;
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .user_btns {
+    padding-top: 6px;
+  }
+
+  .user__utils {
+    padding-bottom: 5px;
+  }
+
+  .user__triangle {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -7px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .user__book-btn {
+    max-width: 120px;
+    font-size: 15px;
+  }
+
+  .user__photo-img {
+    width: 100px;
+  }
+
+  .user__text {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user__name {
+    font-size: 20px;
+  }
+
+  .user__subtitle {
+    font-size: 15px;
+  }
+
+  .user_btns {
+    flex-direction: column-reverse;
+  }
+
+  .user__tabs {
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+
+  .user__tab {
+    padding: 8px;
+  }
+}

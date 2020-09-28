@@ -9,7 +9,7 @@
 }
 
 .photos__img {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .brlt-7 {
@@ -17,7 +17,7 @@
 }
 
 .brrt-7 {
-  border-radius: 0 7px 0;
+  border-radius: 0 7px 0 0;
 }
 
 .brrb-7 {
@@ -26,4 +26,25 @@
 
 .brlb-7 {
   border-radius: 0 0 0 7px;
+}
+
+@media (max-width: 1201px) {
+  .photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photos__elem {
+    width: 30%;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .photos {
+    justify-content: space-around;
+  }
+
+  
 }

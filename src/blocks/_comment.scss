@@ -63,3 +63,27 @@
     } 
   }
 }
+
+
+@media (max-width: 1201px) {
+  .comment__input {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .comment__input {
+    max-width: 70%;
+  }
+
+  .comment__adds {
+    width: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .comment__input {
+    flex-basis: 80%;
+    max-width: 100%;
+  }
+}

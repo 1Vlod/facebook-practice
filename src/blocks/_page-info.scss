@@ -34,3 +34,10 @@
   letter-spacing: 0.02em;
   color: $FACEBOOK_BLACK;
 }
+
+@media (max-width: 1170px) {
+  .page-info__transparency-inf {
+    width: 100%;
+    
+  }
+}

@@ -38,3 +38,47 @@
   line-height: 21px;
   color: $FACEBOOK_BLACK;
 }
+
+@media (max-width: 1200px) {
+  .util-create-post {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .util-message,
+  .util-liked {
+    max-width: 90px;
+    font-size: 13px;
+    height: 30px;
+  }
+
+  .util-create-post {
+    max-width: 75%;
+  }
+
+  .util-search,
+  .util-more {
+    height: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .util-message,
+  .util-liked {
+    max-width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 1px 10px;
+  }
+
+  .util-search,
+  .util-more {
+    height: 25px;
+    border-radius: 20px;
+  }
+
+  .mr6 {
+    display: none;
+  }
+}

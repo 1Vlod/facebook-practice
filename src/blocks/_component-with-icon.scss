@@ -1,21 +1,31 @@
 @import "../variables.scss";
 
-
+a {
+  color: $FACEBOOK_BLUE;
+  text-decoration: none;
+}
 .component-with-icon {
   display: flex;
 }
 
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
 .component-with-icon__wrapper {
   margin-top: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 100%;
+
 }
 
 .component-with-icon__icon {
   color: $FACEBOOK_GREY_MEDIUM;
   font-size: 20px;
+
+  
 }
 
 .component-with-icon__content {
@@ -23,4 +33,40 @@
   font-size: 16px;
   line-height: 19px;
   color: $FACEBOOK_BLACK;
+}
+
+
+.component-with-icon__circles {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.component-with-icon__circle {
+  margin-left: -6px;
+  background-color: $FACEBOOK_BLUE;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  border: 2px solid white;
+}
+
+
+.component-with-icon__title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  color: $FACEBOOK_BLACK;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.component-with-icon__title_red {
+  color: $FACEBOOK_RED;
+  font-weight: 500;
 }

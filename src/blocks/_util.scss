@@ -4,39 +4,37 @@
   border-radius: 6px;
   border: none;
   outline: none;
-}
 
-.util-message,
-.util-liked {
-  width: 110px;
-  height: 36px;
   &:hover {
     color: $FACEBOOK_BLUE;
   }
   &:active {
     background: $FACEBOOK_LIGHT_BLUE;
   }
+}
+
+.util-message,
+.util-liked {
+  width: 110px;
+  height: 36px;
 }
 
 .util-search {
   width: 48px;
   height: 36px;
-  &:hover {
-    color: $FACEBOOK_BLUE;
-  }
-  &:active {
-    background: $FACEBOOK_LIGHT_BLUE;
-  }
 }
 
 .util-more {
   width: 44px;
-  height: 36px;
+  height: 36px;  
+}
 
-  &:hover {
-    color: $FACEBOOK_BLUE;
-  }
-  &:active {
-    background: $FACEBOOK_LIGHT_BLUE;
-  }
+.util-create-post {
+  width: 424px;
+  margin-left: 12px;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: $FACEBOOK_BLACK;
 }

@@ -5,9 +5,22 @@
   font-family: "Roboto";
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 @import "./blocks/header";
 @import "./blocks/user";
 @import "./blocks/util";
 @import "./blocks/wall";
 @import "./blocks/map";
 @import "./blocks/_component-with-icon";
+@import "./blocks/photos";
+@import "./blocks/video";
+@import "./blocks/page-info";
+@import "./blocks/user-photo";
+@import "./blocks/wall-post-pinned";
+@import "./blocks/comment";
+@import "./blocks/card";

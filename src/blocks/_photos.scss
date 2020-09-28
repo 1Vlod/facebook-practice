@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+.photos {
+  margin-top: 16px;
+}
+
+.photos__elem {
+  display: inline-block;
+}
+
+.photos__img {
+  min-width: 100%;
+}
+
+.brlt-7 {
+  border-radius: 7px 0 0;
+}
+
+.brrt-7 {
+  border-radius: 0 7px 0;
+}
+
+.brrb-7 {
+  border-radius: 0 0 7px;
+}
+
+.brlb-7 {
+  border-radius: 0 0 0 7px;
+}

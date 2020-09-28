@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.comment {
+  margin-top: 9px;
+}
+
+.comment__input {
+  background: #F1F2F5;
+  border-radius: 100px;
+
+  border: none;
+  outline: none;
+
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+
+  color: $FACEBOOK_GREY;
+
+  padding: 9px 12px;
+  width: 406px;
+  margin-left: 6px;
+}
+
+.comment__main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.comment__more-comments {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $FACEBOOK_GREY;
+
+  margin-top: 11px;
+  display: inline-block;
+}
+
+.mt62 {
+  margin-top: 62px;
+}
+
+.comment__adds {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.comment__add {
+  font-size: 16px;
+  color: #8C939C;
+
+  &:hover {
+    color: $FACEBOOK_BLACK;
+    & path{
+      fill: $FACEBOOK_BLACK;
+    } 
+  }
+}

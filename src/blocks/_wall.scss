@@ -1,12 +1,14 @@
 @import "../variables.scss";
 
 .wall__container {
-  max-width: 60%;
+  width: 65%;
+  max-width: 877px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wall {
-  min-height: 1633px;
   background: #F0F2F5;
   padding-top: 15px;
 }
@@ -16,12 +18,9 @@
   background: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  max-width: 330px;
 }
 
-.wall-block_about {
-  width: 361px;
-  height: 733px;
-}
 
 .wall-block__header {
   display: flex;
@@ -47,4 +46,80 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.wall-block_photos,
+.wall-block_videos,
+.wall-block_page-info {
+  margin-top: 16px;
+}
+
+.wall-block__video-wrapper {
+  margin-top: 16px;
+}
+
+.wall-block__logo {
+  margin-right: 6px;
+}
+
+.wall-post {
+  padding: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 501px;
+}
+
+.wall-post-create__head {
+  display: flex;
+}
+
+.wall-post-create__add-btn {
+  outline: none;
+  border: none;
+  background: none;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $FACEBOOK_GREY;
+
+  &:hover {
+    color: $FACEBOOK_BLACK;
+  }
+}
+
+
+.fa-file-image {
+  color: #67BA6C;
+}
+
+.fa-user-tag {
+  color: $FACEBOOK_BLUE;
+}
+
+.fa-map-marker-alt {
+  color: $FACEBOOK_RED;
+}
+
+.wall-post-create__adds {
+  margin-top: 21px;
+  margin-left: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wall-post-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $FACEBOOK_GREY;
+
+  margin-top: 32px;
+}
+
+.wall-post__cards {
+  margin-top: 11px;
 }

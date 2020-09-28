@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+
+.video {
+  position: relative;
+}
+
+.video__time {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  left: 75%;
+  top: 75%;
+}
+
+.video__name {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  color: $FACEBOOK_BLACK;
+}
+
+.video__footer {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.025em;
+  color: $FACEBOOK_GREY;
+}

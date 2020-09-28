@@ -3,8 +3,11 @@
 
 .map {
   margin-top: 14px;
-  background: url('img/map.png') center no-repeat;
-  width: 329px;
+  background: url('img/map.png');
+  background-attachment: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // width: 329px;
   height: 170px;
   border-radius: 8px;
   position: relative;

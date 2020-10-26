@@ -183,3 +183,10 @@
     padding-bottom: 50px;
   }
 }
+
+@media (max-width: 576px) {
+  .wall-post-create__adds {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -226,3 +226,23 @@
     padding: 8px;
   }
 }
+
+@media (max-width: 576px) {
+  .user__theme {
+    display: none;
+  }
+
+  .user__photo {
+    margin-top: 0;
+  }
+  .user__book-btn {
+    max-width: 88px;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .user__tabs {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

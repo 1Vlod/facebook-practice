@@ -14,3 +14,10 @@
   width: 41px;
   height: 41px;
 }
+
+@media (max-width: 576px) {
+  .user-photo {
+    max-width: 29px;
+    max-height: 29px;
+  }
+}

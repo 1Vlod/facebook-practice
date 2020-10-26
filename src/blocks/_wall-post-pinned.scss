@@ -167,3 +167,13 @@
     vertical-align: top;
   }
 }
+
+@media (max-width: 576px) {
+  .text-down i {
+    display: none;
+  }
+
+  .wall-post-pinned__btn {
+    font-size: 12px;
+  }
+}

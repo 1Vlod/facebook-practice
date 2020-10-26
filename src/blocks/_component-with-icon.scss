@@ -70,3 +70,12 @@ a {
   color: $FACEBOOK_RED;
   font-weight: 500;
 }
+
+@media (max-width: 576px) {
+  .component-with-icon__content {
+    font-size: 13px;
+  }
+  .component-with-icon__circles {
+    flex-wrap: wrap-reverse;
+  }
+}

@@ -87,3 +87,9 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .comment__adds {
+    display: none;
+  }
+}
